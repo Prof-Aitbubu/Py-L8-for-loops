@@ -1,0 +1,37 @@
+# Task1: 
+# Sum of First 100 Numbers
+# Calculate and print the sum of numbers from 1 to 100 using a loop.
+total = 0
+for number in range(1, 101):
+    total += number
+
+print(f"The total sum of 100 is: ", total)
+
+#Task2: List of Squares
+#Print the square of numbers from 1 to 10.
+for number in range(1, 11):
+    square = number ** 2
+    print(f"The square of {number} is {square}")
+
+
+# Task3: Print Elements of a List
+# Given a list like fruits = ['apple', 'banana', 'cherry'], print each fruit.
+fruits = ['apple', 'banana', 'cherry']
+
+for fruit in fruits:
+    print(fruit)
+
+# Task4: Reverse a String Using a For Loop
+# Ask the user to input a word and print it in reverse using a loop.
+
+word = input("Enter a word: ")
+
+reversed_word = ""
+
+for character in word:
+    reversed_word = character + reversed_word  # Prepend each character
+
+print("Reversed word:", reversed_word)
+
+
+
