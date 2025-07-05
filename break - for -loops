@@ -1,0 +1,92 @@
+# Task1: Find the First Even Number
+# Given a list of numbers, print the first even number and stop the loop.
+
+for number in range(1, 20):  # Includes even and odd numbers
+    if number % 2 == 0:
+        print("First even number is:", number)
+        break
+# or
+
+# Find the First Even Number
+# Given a list of numbers, print the first even number and stop the loop.
+
+numbers = [1, 3, 5, 6, 7, 9, 8, 11]
+
+for number in numbers:
+    if number % 2 == 0:
+        print("First even number is:", number)
+        break
+
+
+# Task2: Check for a Specific Name
+# In a list of student names, check if "John" is present. If found, print "Found John" and stop.
+
+students = ['Jake', 'Jury', 'Ulduz', 'John', 'May']
+
+for student in students:
+    if student == 'John':
+        print('Found John')
+        break
+
+# Task#3: Guess the Secret Number
+# The user has 3 chances to guess the correct number.
+
+secret = 7
+
+for attempt in range(3):
+    guess = int(input("Enter your guess: "))
+    if guess == secret:
+        print("You won!")
+        break
+    else:
+        print("Wrong guess.")
+
+# or:
+
+secret = 7
+max_attempts = 3
+
+for attempt in range(max_attempts):
+    guess = int(input(f"Attempt {attempt + 1}/{max_attempts} - Enter your guess: "))
+    if guess == secret:
+        print("You won!")
+        break
+    else:
+        print("Wrong guess.")
+else:
+    print("Sorry, you've used all your attempts.")
+
+
+#Task4: Code to Find the First Word That Includes 'a':
+# Find the First Word Containing 'a'
+# From a list of words, find and print the first one that contains the letter 'a'. Stop after finding it.
+
+words = ['John', 'Mike', 'Sara', 'Alice', 'Terry']
+
+for word in words:
+    if 'a' in word.lower():
+        print(f"I found the first word that contains 'a': {word}")
+        break
+
+# or:
+
+# Find the First Word Starting with 'A'
+# From a list of words, find and print the first one that starts with 'A'. Stop after finding it.
+
+words = ['John', 'Mike', 'Sara', 'Alice', 'Terry']
+
+for word in words:
+    if word.lower().startswith('a'):
+        print(f'I found the first word that starts with A: {word}')
+        break
+
+# Task5: Stop at the First Negative Number
+# Iterate through a list of numbers. Stop the loop when a negative number is encountered and print "Negative number found."
+
+numbers = [1, 2, 3, 4, 5, -1, -4, 0, 10, 11]
+
+for number in numbers:
+    if number < 0:
+        print(f'Negative number found: {number}')
+        break
+
